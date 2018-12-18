@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainAnchor" prefHeight="538.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arkasian.controller.MainViewController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Window">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+               <graphic>
+                  <Label fx:id="loggedInLabel" />
+               </graphic>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About Travel system" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <AnchorPane fx:id="insideAnchor" prefHeight="515.0" prefWidth="741.0" VBox.vgrow="ALWAYS" />
+  </children>
+</VBox>
